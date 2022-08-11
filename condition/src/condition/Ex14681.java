@@ -2,7 +2,7 @@ package condition;
 
 import java.util.Scanner;
 
-public class Ex03 {
+public class Ex14681 {
 	public static void main(String[] args) {
 //		backjoon 14681번
 		/* 흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 
