@@ -45,20 +45,20 @@ public static void main(String[] args) {
 	 * 
 	 * 10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
 //	 */
-//	boolean[] selfNum = new boolean[10001];
-//	
-//		for(int i = 1; i < 10001; i++) {
-//			int a = selfNum(i);
-//			if(a < 10001) {
-//				selfNum[a] = true;
-//			}
-//		}
-//		
-//		for(int i = 1 ; i < 10001; i++) {
-//			if(!selfNum[i]){
-//				System.out.println(i);
-//			}
-//		}
+	boolean[] selfNum = new boolean[10001];
+	
+		for(int i = 1; i < 10001; i++) {
+			int a = selfNum(i);
+			if(a < 10001) {
+				selfNum[a] = true;
+			}
+		}
+		
+		for(int i = 1 ; i < 10001; i++) {
+			if(!selfNum[i]){
+				System.out.println(i);
+			}
+		}
 	}
 }
 
