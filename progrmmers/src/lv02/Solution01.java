@@ -5,31 +5,23 @@ public class Solution01 {
 	static class Solution {
 	    public String solution(String s) {
 	    	String[] result = s.split(" ");
-	        String answer = result[0];
-	        String max = null;
-	        String min = null;
+	    	String answer ="";
+	        String max = result[0];
+	        String min = result[0];
 	        
-				for(int i = 0 ; i < result.length;i++) {
-					if(Integer.parseInt(result[i]) > Integer.parseInt(answer)){
-						System.out.println("max1 "+max);
-						System.out.println("answer "+answer);
-					}max = result[i];
-					System.out.println("max2 "+max);
+			for(int i = 0 ; i < result.length;i++) {
+				if(Integer.parseInt(result[i]) < Integer.parseInt(max)){
+					max = result[i];
 				}
-				
-				for(int i = 0 ; i < result.length;i++) {
-					if(Integer.parseInt(result[i]) < Integer.parseInt(answer)) {
-						System.out.println("min" + min);
-						System.out.println("answer "+answer);
-					}min = result[i];
-					System.out.println("min2 "+ min);
-					
-					
+			}
+			
+			for(int i = 0 ; i < result.length;i++) {
+				if(Integer.parseInt(result[i]) > Integer.parseInt(min)) {
+					min = result[i];
 				}
-				answer = "";
-				answer += max + min;
-				System.out.println("max 결론 "+max);
-				System.out.println("min 결과 "+ min);
+			}
+				answer += max + " " + min;
+
 				return answer;
 	    }
 	}
