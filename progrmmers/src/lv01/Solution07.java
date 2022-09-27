@@ -22,17 +22,14 @@ public class Solution07 {
 	        	// 조건식을 통해 s에 "p"/"y"의 값을 찾아 갯수를 세어준다
 	        	if(result[i].equals("p")){
 	        		p++;
-	        		System.out.println(p);
 	        	}else if(result[i].equals("y")) {
 	        		y++;
-	        		System.out.println(y);
 	        	}
 	        }
 	        // p와 y의 갯수를 비교하여 같으면  true / 다르면 false를 반환
 	        if(p != y) {
 	        	answer = false;
 	        }
-	        System.out.println(answer);
 	        return answer;
 	    }
 	}
